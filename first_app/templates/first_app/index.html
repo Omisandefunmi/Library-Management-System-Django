@@ -1,0 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First App Template</title>
+</head>
+<body>
+    <h1>{{ name }}, Welcome to my first app</h1>
+    <a href="{% url 'first_app:about' %}">Go to About page</a>
+</body>
+</html>
