@@ -8,9 +8,9 @@ urlpatterns = [
     # path('index', views.index, name='hello'),
     # path('', views.redirect),
     # path('about/', views.about, name='about'),
-    path('books/', views.book_list, name='book-list'),
-    path('books/<int:pk>/', views.book_detail, name='book-details'),
-    path('publishers/', views.publisher_list, name='publisher-list'),
-    path('publishers/<int:pk>/', views.publisher_detail, name='publisher-detail'),
+    path('books/', views.BookList.as_view(), name='book-list'),
+    path('books/<int:pk>/', views.BookDetail.as_view(), name='book-details'),
+    path('publishers/', views.PublisherList.as_view(), name='publisher-list'),
+    path('publishers/<int:pk>/', views.PublisherDetail.as_view(), name='publisher-detail'),
 ]
 
